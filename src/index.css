@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 44 33% 94%; /* off-white quente */
+    --foreground: 0 0% 4%; /* preto profundo */
+
+    --primary: 44 55% 53%; /* dourado da Valora */
+    --primary-foreground: 0 0% 4%;
+
+    --ink: 0 0% 4%; /* fundo escuro */
+    --ink-foreground: 44 33% 94%; /* texto sobre fundo escuro */
+    --ink-muted: 44 10% 66%;  /* texto secundário */
+  }
+
+  body {
+    @apply bg-background font-sans text-foreground antialiased; 
+  }
+}
