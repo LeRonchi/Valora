@@ -19,7 +19,7 @@ export function ServicesPreview() {
 
             <a
                 href="/servicos"
-                className="mt-8 incline-flex rounded-lg border border-primary/60 px-6 py-3 font-semibold text-primary transition-colors hover:bg-primary/10">
+                className="mt-8 inline-flex rounded-lg border border-primary/60 px-6 py-3 font-semibold text-primary transition-colors hover:bg-primary/10">
                     Ver todos os serviços
                 </a>
 
