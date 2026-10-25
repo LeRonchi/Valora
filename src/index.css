@@ -4,18 +4,25 @@
 
 @layer base {
   :root {
-    --background: 44 33% 94%; /* off-white quente */
-    --foreground: 0 0% 4%; /* preto profundo */
+    --background: 44 33% 94%;
+    --foreground: 0 0% 4%;
 
-    --primary: 44 55% 53%; /* dourado da Valora */
+    --primary: 44 55% 53%;
     --primary-foreground: 0 0% 4%;
 
-    --ink: 0 0% 4%; /* fundo escuro */
-    --ink-foreground: 44 33% 94%; /* texto sobre fundo escuro */
-    --ink-muted: 44 10% 66%;  /* texto secundário */
+    --ink: 0 0% 4%;
+    --ink-foreground: 44 33% 94%;
+    --ink-muted: 44 10% 66%;
   }
 
   body {
-    @apply bg-background font-sans text-foreground antialiased; 
+    @apply bg-background font-sans text-foreground antialiased;
+  }
+}
+
+@layer components {
+  /* Centraliza o conteúdo e limita a largura. Usado em todas as seções. */
+  .section-shell {
+    @apply mx-auto w-full max-w-6xl px-5 sm:px-8;
   }
 }
